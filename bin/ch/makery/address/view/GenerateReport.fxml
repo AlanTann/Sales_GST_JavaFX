@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="467.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.GenerateReport">
+   <children>
+      <TableView fx:id="productTable" layoutX="7.0" layoutY="49.0" prefHeight="347.0" prefWidth="637.0">
+        <columns>
+          <TableColumn fx:id="productNameColumn" prefWidth="105.0" text="Products Sold" />
+          <TableColumn fx:id="productQuantityColumn" prefWidth="119.0" text="Total Quantity Sold" />
+            <TableColumn fx:id="productGstTypeColumn" prefWidth="92.0" text="Gross Profit" />
+            <TableColumn prefWidth="75.0" text="Total Cost" />
+            <TableColumn prefWidth="110.0" text="Total Gst Charged" />
+            <TableColumn prefWidth="66.0" text="Net Profit" />
+        </columns>
+      </TableView>
+      <Label layoutX="268.0" layoutY="25.0" prefHeight="17.0" prefWidth="144.0" text="This month's report" />
+      <Button layoutX="575.0" layoutY="419.0" mnemonicParsing="false" onAction="#handleReturn" text="Return" />
+   </children>
+</AnchorPane>

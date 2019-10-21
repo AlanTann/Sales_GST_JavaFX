@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.ProductViewController">
+   <children>
+      <TableView fx:id="productTable" prefHeight="200.0" prefWidth="389.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="productIdColumn" prefWidth="78.0" text="Product ID" />
+          <TableColumn fx:id="productNameColumn" prefWidth="145.0" text="Product" />
+            <TableColumn fx:id="productQuantityColumn" prefWidth="65.0" text="Quanity" />
+            <TableColumn fx:id="productPriceColumn" prefWidth="68.0" text="Price" />
+            <TableColumn fx:id="productGstTypeColumn" prefWidth="65.0" text="GST Tax" />
+        </columns>
+      </TableView>
+      <HBox layoutX="261.0" layoutY="261.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <Button layoutX="261.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleCreateProduct" text="Create" />
+            <Button mnemonicParsing="false" onAction="#handleEditProduct" text="Edit" />
+            <Button layoutX="327.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleDeleteProduct" text="Delete" />
+            <Button layoutX="388.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

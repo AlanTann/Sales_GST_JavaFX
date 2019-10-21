@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.CartController">
+   <children>
+      <TableView fx:id="productCartTable" layoutX="100.0" layoutY="-37.0" prefHeight="200.0" prefWidth="300.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="productNameCart" prefWidth="136.0" text="Product Name" />
+          <TableColumn fx:id="productPriceCart" prefWidth="100.0" text="Product Price" />
+            <TableColumn fx:id="productQuantityCart" prefWidth="111.0" text="Product Quantity" />
+        </columns>
+      </TableView>
+      <Label layoutX="22.0" layoutY="14.0" text="Cart" />
+      <HBox layoutX="222.0" layoutY="361.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Button layoutX="222.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+            <Button layoutX="305.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleOkay" text="Ok" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
